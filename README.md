@@ -11,7 +11,7 @@ Opracowanie i porównanie skuteczności trzech różnych architektur sieci neuro
   3. **Zoptymalizowanego** – głęboka sieć z wieloma blokami Conv2D, BatchNormalization i SpatialDropout2D.
  
 ## Dane
-- Źródło: [Cards Image Dataset-Classification na Kaggle](https://www.kaggle.com/datasets/gpiosenka/cards-image-datasetclassification/data) 
+- Źródło: [Cards Image Dataset-Classification](https://www.kaggle.com/datasets/gpiosenka/cards-image-datasetclassification/data) 
 - Liczba obrazów:  
   - Treningowe: 7 094  
   - Walidacyjne:   530  
