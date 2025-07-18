@@ -6,9 +6,9 @@ Opracowanie i porównanie skuteczności trzech różnych architektur sieci neuro
 ## Cel
 - Zbadanie wpływu głębokości i złożoności architektury sieci na dokładność klasyfikacji.
 - Porównanie modeli:  
-  1. **Bazowego** – płytka sieć z jedną warstwą Conv2D.  
-  2. **Pośredniego** – dwie warstwy Conv2D z regularyzacją Dropout.  
-  3. **Zoptymalizowanego** – głęboka sieć z wieloma blokami Conv2D, BatchNormalization i SpatialDropout2D.
+  - **Bazowego** – płytka sieć z jedną warstwą Conv2D.  
+  - **Pośredniego** – dwie warstwy Conv2D z regularyzacją Dropout.  
+  - **Zoptymalizowanego** – głęboka sieć z wieloma blokami Conv2D, BatchNormalization i SpatialDropout2D.
  
 ## Dane
 - Źródło: [Cards Image Dataset-Classification](https://www.kaggle.com/datasets/gpiosenka/cards-image-datasetclassification/data) 
