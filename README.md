@@ -32,8 +32,8 @@ Opracowanie i porównanie skuteczności trzech różnych architektur sieci neuro
 ### 2. Model pośredni
 - **Wejście**: `Input(224,224,3)` + `Rescaling(1./255)`
 - **Bloki konwolucyjne**:  
-  1. `Conv2D(32, (3×3), activation='relu')` + `MaxPooling2D((2×2))`  
-  2. `Conv2D(64, (3×3), activation='relu')` + `MaxPooling2D((2×2))` + `Dropout(0.3)`
+  - `Conv2D(32, (3×3), activation='relu')` + `MaxPooling2D((2×2))`  
+  - `Conv2D(64, (3×3), activation='relu')` + `MaxPooling2D((2×2))` + `Dropout(0.3)`
 - **Klasyfikacja**: `Flatten()` → `Dense(64, activation='relu')` → `Dense(53, activation='softmax')`
 - **Parametry**: ok. 1,32 mln  
 - Lepsza generalizacja dzięki dwóm warstwom konwolucyjnym i Dropout.
@@ -43,9 +43,9 @@ Opracowanie i porównanie skuteczności trzech różnych architektur sieci neuro
 - **Głębokie bloki konwolucyjne** z inicjalizatorem He Normal, BatchNormalization, SpatialDropout2D, funkcjami ELU/ReLU oraz stopniowym zwiększaniem liczby filtrów (32 → 256).
 - **Pooling**: naprzemiennie `MaxPooling2D((4×4))` i `(2×2)`
 - **Warstwy gęste**:  
-  1. `Dense(256, kernel_initializer='he_normal')` + `BatchNormalization()` + `Activation('elu')` + `Dropout(0.2)`  
-  2. `Dense(128, kernel_initializer='he_normal')` + `BatchNormalization()` + `Activation('elu')` + `Dropout(0.2)`  
-  3. `Dense(53, activation='softmax')`
+  - `Dense(256, kernel_initializer='he_normal')` + `BatchNormalization()` + `Activation('elu')` + `Dropout(0.2)`  
+  - `Dense(128, kernel_initializer='he_normal')` + `BatchNormalization()` + `Activation('elu')` + `Dropout(0.2)`  
+  - `Dense(53, activation='softmax')`
 - **Parametry**: ok. 5,75 mln (trenowalne ok. 5,75 mln)  
 - Najbardziej złożona architektura, minimalizująca przeuczenie i wydobywająca hierarchiczne cechy.
 
